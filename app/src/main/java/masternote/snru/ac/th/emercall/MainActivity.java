@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if (actionBarDrawerToggle.onConfigurationChanged(item)) {
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
