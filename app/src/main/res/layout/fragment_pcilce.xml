@@ -20,6 +20,7 @@
 
             <!--Green Layout-->
             <RelativeLayout
+                android:layout_margin="20dp"
                 android:layout_width="@dimen/icon"
                 android:layout_height="@dimen/icon"
                 android:layout_alignParentEnd="true"
@@ -30,19 +31,22 @@
 
                 <!--station1-->
                 <ImageView
+                    android:id="@+id/imageViewStation1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/station1" />
 
                 <!--Title-->
                 <TextView
+                    android:clickable="true"
+                    android:id="@+id/textViewStation1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="#82000000"
                     android:gravity="center_horizontal"
                     android:padding="5dp"
-                    android:text="station1"
+                    android:text="@string/station1"
                     android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -61,6 +65,7 @@
                 android:layout_alignParentStart="true">
                 <!--station2-->
                 <ImageView
+                    android:id="@+id/imageViewStation2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/station2" />
@@ -68,6 +73,7 @@
 
                 <!--Title-->
                 <TextView
+                    android:id="@+id/textViewStation2"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
@@ -75,7 +81,7 @@
                     android:background="#82000000"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="station1"
+                    android:text="@string/station2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -99,11 +105,13 @@
                 android:layout_height="@dimen/icon">
                 <!--station3-->
                 <ImageView
+                    android:id="@+id/imageViewStation3"
                     android:src="@drawable/station3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
                 <!--Title-->
                 <TextView
+                    android:id="@+id/textViewStation3"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
@@ -111,7 +119,7 @@
                     android:background="#82000000"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="station1"
+                    android:text="@string/station3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -124,12 +132,14 @@
                 android:layout_height="@dimen/icon">
                 <!--station4-->
                 <ImageView
+                    android:id="@+id/imageViewStation4"
                     android:src="@drawable/station4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
                 <!--Title-->
                 <TextView
+                    android:id="@+id/textViewStation4"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
@@ -137,7 +147,7 @@
                     android:background="#82000000"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="station1"
+                    android:text="@string/station4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
