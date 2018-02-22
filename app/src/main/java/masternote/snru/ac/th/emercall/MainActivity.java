@@ -53,14 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        Insurance Controller
-        TextView InsuranceTextView= findViewById(R.id.textInsurance);
-        InsuranceTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contentMainFragment,new InsuranceFragment()).commit();
-            }
-        });
 
 
 //        Exit  Controller
