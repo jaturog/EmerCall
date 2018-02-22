@@ -5,6 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import masternote.snru.ac.th.emercall.R;
 
 /**
  * Created by Admin on 22/02/61.
@@ -44,11 +48,17 @@ public class HopitalAdapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        View view1= layoutInflater.inflate(R.layout.listvirw_layout, viewGroup, false);
+
+        ImageView imageView = view1.findViewById(R.id.imageListView);
+        TextView titleTextView = view1.findViewById(R.id.textViewTitle);
+        TextView phoneTextView = view1.findViewById(R.id.textViewPhone);
+
+        imageView.setImageResource(ints[i]);
+        titleTextView.setText(titleStrings[i]);
+        phoneTextView.setText(phoneStrings[i]);
 
 
-
-
-
-        return null;
+        return view1;
     }
 } //Main Class
